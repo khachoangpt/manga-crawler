@@ -1,8 +1,9 @@
 {
 	"name": "manga-crawler-cli",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "",
 	"main": "dist/main.js",
+	"files": ["dist"],
 	"bin": {
 		"manga-crawler": "dist/main.js"
 	},
