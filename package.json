@@ -8,7 +8,8 @@
 		"manga-crawler": "dist/main.js"
 	},
 	"scripts": {
-		"build": "tsup"
+		"build": "tsup",
+		"publish:stable": "pnpm build && pnpm publish"
 	},
 	"keywords": [],
 	"author": "",
