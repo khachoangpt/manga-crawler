@@ -5,6 +5,7 @@ import axios from "axios"
 import * as cheerio from "cheerio"
 
 const crawlChapter = async (storyUrl: string, tryCount = 0) => {
+  console.log(__dirname);
   let url = storyUrl
   const origin = new URL(storyUrl).origin
 
@@ -29,8 +30,6 @@ const crawlChapter = async (storyUrl: string, tryCount = 0) => {
     const images = $(".page-chapter").toArray()
     await fs.mkdir(
       path.join(
-        __dirname,
-        "data",
         title as string,
         chapterName as string
       ),
@@ -46,8 +45,6 @@ const crawlChapter = async (storyUrl: string, tryCount = 0) => {
           responseType: "arraybuffer",
         })
         const filePath = path.join(
-          __dirname,
-          "data",
           title as string,
           chapterName as string,
           `${images.indexOf(image) + 1}.jpg`
