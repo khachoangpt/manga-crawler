@@ -5,7 +5,6 @@ import axios from "axios"
 import * as cheerio from "cheerio"
 
 const crawlChapter = async (storyUrl: string, tryCount = 0) => {
-  console.log(__dirname);
   let url = storyUrl
   const origin = new URL(storyUrl).origin
 
