@@ -5,7 +5,7 @@ Manga crawler is a command line tool to crawl manga from any website
 ## Installation
 
 ```bash
-npm install -g manga-crawler
+npm install -g manga-crawler-cli
 ```
 
 ## Usage
