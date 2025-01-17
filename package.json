@@ -1,0 +1,28 @@
+{
+	"name": "manga-crawler",
+	"version": "1.0.0",
+	"description": "",
+	"main": "dist/main.js",
+	"bin": {
+		"manga-crawler": "dist/main.js"
+	},
+	"scripts": {
+		"build": "tsup"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/figlet": "^1.7.0",
+		"@types/node": "^22.10.7",
+		"tsup": "^8.3.5",
+		"typescript": "^5.7.3"
+	},
+	"dependencies": {
+		"axios": "^1.7.9",
+		"cheerio": "^1.0.0",
+		"commander": "^13.0.0",
+		"tsx": "^4.19.2"
+	}
+}
